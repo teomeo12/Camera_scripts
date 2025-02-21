@@ -1,0 +1,16 @@
+import pyrealsense2 as rs
+
+pipeline = rs.pipeline()
+pipeline.start()
+print("Camera streaming started")
+
+for _ in range(30):
+    frames = pipeline.wait_for_frames()
+    depth = frames.get_depth_frame()
+    color = frames.get_color_frame()
+    if depth and color:
+        print("Depth and color frames acquired!")
+        break
+
+pipeline.stop()
+print("Camera streaming stopped")
