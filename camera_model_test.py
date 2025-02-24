@@ -5,6 +5,7 @@ import time
 import supervision as sv
 from ultralytics import YOLO
 
+
 def main():
     # Load your YOLO model (update the path as needed)
     #model_path = "/home/teo/Desktop/YoLO10_model_divot_detection/best.pt"
