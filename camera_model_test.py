@@ -8,7 +8,9 @@ from ultralytics import YOLO
 def main():
     # Load your YOLO model (update the path as needed)
     #model_path = "/home/teo/Desktop/YoLO10_model_divot_detection/best.pt"
-    model_path = "/home/teo/Desktop/YoLO10_model_divot_detection/best_ncnn_model/model_ncnn.py"
+    model_path = r'C:\Users\teomeo\Desktop\aMU_MSc\desertation\YoLO10_model_divot_detection\best.pt'
+
+    #model_path = "/home/teo/Desktop/YoLO10_model_divot_detection/best_ncnn_model/model_ncnn.py"
     model = YOLO(model_path)
 
     # Initialize annotators (using BoxAnnotator and LabelAnnotator)
